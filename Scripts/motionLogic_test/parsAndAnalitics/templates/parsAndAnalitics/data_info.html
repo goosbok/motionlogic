@@ -1,0 +1,9 @@
+{% extends 'parsAndAnalitics/base_temp.html' %}
+
+{% block title %}Информация о данных{% endblock %}
+{% block content%}
+    <h3>Количество магазинов у каждого ресторана:</h3>
+    {% for key, value in counts.items %}
+        <p><a href="{% url 'table_url' name_corp=key %}">{{ key }}</a>: {{ value }}</p>
+    {% endfor %}
+{% endblock %}

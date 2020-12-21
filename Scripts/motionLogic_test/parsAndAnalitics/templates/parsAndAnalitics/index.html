@@ -1,0 +1,11 @@
+{% extends 'parsAndAnalitics/base_temp.html' %}
+
+
+
+{% block title %}Работа с данными{% endblock %}
+{% block content %}
+    <h1>Парсинг и вывод данных.</h1>
+    <p><a href="{% url 'data_url' %}"> Вывод данных</a></p>
+    <p><a href="{% url 'pars_url' %}"> Парсинг данных</a></p>
+    <p><a href="{% url 'analitics_url' %}"> Анализ данных</a></p>
+{% endblock %}
