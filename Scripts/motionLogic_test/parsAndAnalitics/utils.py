@@ -127,11 +127,10 @@ def get_restaurant_list_json(corp: str, jsons: list):
 
     return restaurants_list
 
-########     Analitics     ########
 
 
 def main():
-    print(get_kfc_restaurants())
+    pass
 
 if __name__ == '__main__':
     main()
